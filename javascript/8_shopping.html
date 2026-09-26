@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Discount</title>
+</head>
+<body>
+    <p>Calculate discount based on purchase amount: Above 30000 = 30%, Above 5000 = 20%, Otherwise = No Discount</p>
+    
+    <script>
+        let purchase = parseInt(prompt("Enter purchase amount in ₹:"));
+        let discount = 0;
+        
+        if (purchase > 30000) {
+            discount = 30;
+        } else if (purchase > 5000) {
+            discount = 20;
+        } else {
+            discount = 0;
+        }
+        
+        let discountAmount = (purchase * discount) / 100;
+        let finalPrice = purchase - discountAmount;
+        
+        alert("Discount: " + discount + "% | Final Price: ₹" + finalPrice);
+    </script>
+</body>
+</html>

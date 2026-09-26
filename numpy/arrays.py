@@ -1,0 +1,17 @@
+import numpy as np
+
+arr=np.array([10,20,30,40,50])
+print(arr)
+print(arr.ndim)
+arr2=np.array([[10,20],[30,40]])
+print(arr2)
+arr3=np.array([[[10,20,30],[40,50,60],[70,80,90]]])
+print(arr3)
+print(arr2.ndim)
+print(arr2.ndim)
+print(arr3.ndim)
+print(arr3.shape)
+print(arr2.shape)
+print(arr.dtype)
+print(arr2.dtype)
+print(arr3.dtype)

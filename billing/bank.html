@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<style>
+    body{
+        background-color:#aeb6be;
+    }
+
+    .col1, .col2{
+        
+        padding:50px;
+        border-radius:30px;
+        
+    }
+</style>
+</head>
+<body>
+
+    <div class="container-fluid">
+
+    <h2 class="text-center">bank account</h2>
+
+    <h3 class="text-center">
+        Total Balance : ₹<span id="bal">100000</span>
+    </h3>
+
+    <div class="row style=display:flex; justify-content:space-around;">
+
+        <div class="col1">
+            <h4>Deposit</h4>
+
+            <input type="number" id="dep" class="form-control" placeholder="enter your amount to deposit" style="width: 300px;">
+
+            <br>
+
+            <button class="btn btn-success" onclick="deposit()">
+                Deposit
+            </button>
+        </div>
+
+        <div class="col2">
+            <h4>Withdraw</h4>
+
+            <input type="number" id="with" class="form-control" placeholder="enter your amount to withdraw" style="width: 300px;">
+
+            <br>
+
+            <button class="btn btn-danger" onclick="withdraw()">
+                Withdraw
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+var balance = 100000;
+
+function deposit()
+{
+    var amount = Number(document.getElementById("dep").value);
+
+    balance += amount;
+
+    document.getElementById("bal").innerHTML = balance;
+
+    alert("Amount Deposited successfully");
+}
+
+function withdraw()
+{
+    var amount = Number(document.getElementById("with").value);
+
+    balance -= amount;
+
+    document.getElementById("bal").innerHTML = balance;
+
+    alert("Amount Withdrawn");
+}
+
+</script>
+
+    
+    </div>
+        
+</body>
+</html>

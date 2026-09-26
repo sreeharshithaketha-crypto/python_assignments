@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internet Speed Category</title>
+</head>
+<body>
+    <p>Check internet speed category: Above 100 = Excellent, 50-100 = Good, 20-49 = Average, Below 20 = Poor</p>
+    
+    <script>
+        let speed = parseInt(prompt("Enter internet speed in Mbps:"));
+        let category = "";
+        
+        if (speed > 100) {
+            category = "Excellent";
+        } else if (speed >= 50 && speed <= 100) {
+            category = "Good";
+        } else if (speed >= 20 && speed < 50) {
+            category = "Average";
+        } else {
+            category = "Poor";
+        }
+        
+        alert(speed + " Mbps - " + category);
+    </script>
+</body>
+</html>

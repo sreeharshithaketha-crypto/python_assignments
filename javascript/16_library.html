@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Book Issue</title>
+</head>
+<body>
+    <p>Library book issue system</p>
+    
+    <script>
+        let memId = prompt("Enter ID:");
+        let daysOverdue = parseInt(prompt("Enter days overdue:"));
+        let fine = 0;
+        
+        if (daysOverdue > 0) {
+            fine = daysOverdue * 5;
+        }
+        
+        if (fine === 0) {
+            alert("Book issued successfully! No pending fine.");
+        } else {
+            alert("Pending fine: ₹" + fine + ". Pay fine to issue new book.");
+        }
+    </script>
+</body>
+</html>

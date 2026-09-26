@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Eligibility</title>
+</head>
+<body>
+    <p>Check loan eligibility: Age 21-75, Salary ≥ 300000, CIBIL Score ≥ 700</p>
+    
+    <script>
+        let age = parseInt(prompt("Enter age:"));
+        let salary = parseInt(prompt("Enter salary in ₹:"));
+        let cibilScore = parseInt(prompt("Enter CIBIL score:"));
+        
+        if (age >= 21 && age <= 75) {
+            if (salary >= 300000) {
+                if (cibilScore >= 700) {
+                    alert("Loan Eligible");
+                } else {
+                    alert("CIBIL Score too low");
+                }
+            } else {
+                alert("Salary not sufficient");
+            }
+        } else {
+            alert("Age not eligible");
+        }
+    </script>
+</body>
+</html>

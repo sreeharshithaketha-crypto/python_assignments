@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Price</title>
+</head>
+<body>
+    <p>Get ticket price based on age: Below 12 = ₹100, 12-59 = ₹200, 60+ = ₹50</p>
+    
+    <script>
+        let age = parseInt(prompt("Enter age:"));
+        let price = 0;
+        
+        if (age < 12) {
+            price = 100;
+        } else if (age >= 12 && age < 60) {
+            price = 200;
+        } else {
+            price = 50;
+        }
+        
+        alert("Ticket Price: ₹" + price);
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# 2. Create a list of numbers and print only the odd numbers.
+numbers = [1, 2, 3, 4, 5, 6]
+for number in numbers:
+    if number % 2 != 0:
+        print(number)

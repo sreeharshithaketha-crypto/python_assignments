@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Withdrawal</title>
+</head>
+<body>
+    <p>Check if withdrawal amount is available in account balance</p>
+    
+    <script>
+        let balance = parseInt(prompt("Enter account balance:"));
+        let withdrawal = parseInt(prompt("Enter withdrawal amount:"));
+        
+        if (withdrawal <= balance) {
+            alert("Withdrawal Successful! New Balance: " + (balance - withdrawal));
+        } else {
+            alert("Insufficient Balance");
+        }
+    </script>
+</body>
+</html>

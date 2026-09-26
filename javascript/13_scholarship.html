@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship Eligibility</title>
+</head>
+<body>
+    <p>Check scholarship eligibility: Marks ≥ 90% AND Family Income < 300000</p>
+    
+    <script>
+        let marks = parseFloat(prompt("Enter marks percentage:"));
+        let income = parseInt(prompt("Enter family income in ₹:"));
+        
+        if (marks >= 90 && income < 300000) {
+            alert("Eligible for Scholarship");
+        } else {
+            alert("Not Eligible for Scholarship");
+        }
+    </script>
+</body>
+</html>
