@@ -1,10 +1,10 @@
 # Beginner Python Assignment Workbooks
 
-The exercises are grouped into topic folders to avoid creating one file per question. Each workbook uses short names, small functions, and plain examples. Existing folders and files were left unchanged.
+The exercises are grouped into topic folders. The workbooks use short names, small functions, and plain examples. Existing exercises are kept in their topic folders.
 
 ## Folders and Run Commands
 
-Run commands from the `python` workspace folder in PowerShell:
+Run commands from the repository root in PowerShell:
 
 ```powershell
 python file_io_assignments/file_basics.py
