@@ -1,15 +1,10 @@
-"""Simple solutions for 100 Python list practice questions."""
-
-
 # 1. Create a list of 10 integers and print all elements.
 def q01_numbers():
     return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-
 # 2. Create a list of 5 names and print the first and last element.
 def q02_first_and_last(names):
     return names[0], names[-1]
-
 
 # 3. Find the length of a list without using len().
 def q03_length(items):
@@ -17,7 +12,6 @@ def q03_length(items):
     for item in items:
         count += 1
     return count
-
 
 # 4. Find the largest number in a list without using max().
 def q04_largest(numbers):
@@ -27,7 +21,6 @@ def q04_largest(numbers):
             largest = number
     return largest
 
-
 # 5. Find the smallest number in a list without using min().
 def q05_smallest(numbers):
     smallest = numbers[0]
@@ -36,14 +29,12 @@ def q05_smallest(numbers):
             smallest = number
     return smallest
 
-
 # 6. Calculate the sum of all numbers without using sum().
 def q06_total(numbers):
     total = 0
     for number in numbers:
         total += number
     return total
-
 
 # 7. Count how many times a given number occurs in a list.
 def q07_count_number(numbers, wanted):
@@ -53,7 +44,6 @@ def q07_count_number(numbers, wanted):
             count += 1
     return count
 
-
 # 8. Check whether a given element exists in a list.
 def q08_contains(items, wanted):
     for item in items:
@@ -61,43 +51,35 @@ def q08_contains(items, wanted):
             return True
     return False
 
-
 # 9. Print all elements of a list using a for loop.
 def q09_print_items(items):
     for item in items:
         print(item)
-
 
 # 10. Print all elements of a list in reverse order.
 def q10_print_backwards(items):
     for item in items[::-1]:
         print(item)
 
-
 # 11. Print only even numbers from a list.
 def q11_evens(numbers):
     return [number for number in numbers if number % 2 == 0]
-
 
 # 12. Print only odd numbers from a list.
 def q12_odds(numbers):
     return [number for number in numbers if number % 2 != 0]
 
-
 # 13. Create a new list containing squares of all numbers.
 def q13_squares(numbers):
     return [number * number for number in numbers]
-
 
 # 14. Create a new list containing cubes of all numbers.
 def q14_cubes(numbers):
     return [number * number * number for number in numbers]
 
-
 # 15. Find the average of numbers in a list.
 def q15_average(numbers):
     return q06_total(numbers) / q03_length(numbers)
-
 
 # 16. Count positive, negative, and zero values.
 def q16_count_signs(numbers):
@@ -111,7 +93,6 @@ def q16_count_signs(numbers):
             zero += 1
     return positive, negative, zero
 
-
 # 17. Find the second-largest different number in a list.
 def q17_second_largest(numbers):
     ordered = sorted(numbers)
@@ -120,7 +101,6 @@ def q17_second_largest(numbers):
         if number not in different:
             different.append(number)
     return different[-2]
-
 
 # 18. Find the second-smallest different number in a list.
 def q18_second_smallest(numbers):
@@ -131,13 +111,11 @@ def q18_second_smallest(numbers):
             different.append(number)
     return different[1]
 
-
 # 19. Swap the first and last elements of a list.
 def q19_swap_ends(items):
     result = items[:]
     result[0], result[-1] = result[-1], result[0]
     return result
-
 
 # 20. Copy one list into another without using copy().
 def q20_copy_list(items):
@@ -146,87 +124,72 @@ def q20_copy_list(items):
         result.append(item)
     return result
 
-
 # 21. Add an element to the end of a list using append().
 def q21_append(items, item):
     items.append(item)
     return items
-
 
 # 22. Add multiple elements using extend().
 def q22_extend(items, more_items):
     items.extend(more_items)
     return items
 
-
 # 23. Insert an element at the 3rd position.
 def q23_insert_third(items, item):
     items.insert(2, item)
     return items
-
 
 # 24. Remove a specific element using remove().
 def q24_remove(items, item):
     items.remove(item)
     return items
 
-
 # 25. Remove the last element using pop().
 def q25_pop_last(items):
     items.pop()
     return items
-
 
 # 26. Remove an element at a specific index using pop().
 def q26_pop_index(items, index):
     items.pop(index)
     return items
 
-
 # 27. Delete an element using del.
 def q27_delete_index(items, index):
     del items[index]
     return items
-
 
 # 28. Empty a list using clear().
 def q28_clear(items):
     items.clear()
     return items
 
-
 # 29. Find the index of a given element.
 def q29_find_index(items, wanted):
     return items.index(wanted)
 
-
 # 30. Count occurrences of a particular element.
 def q30_count(items, wanted):
     return items.count(wanted)
-
 
 # 31. Sort a list in ascending order.
 def q31_sort_ascending(items):
     items.sort()
     return items
 
-
 # 32. Sort a list in descending order.
 def q32_sort_descending(items):
     items.sort(reverse=True)
     return items
-
 
 # 33. Reverse a list using reverse().
 def q33_reverse(items):
     items.reverse()
     return items
 
-
 # 34. Create a sorted copy without changing the original list.
 def q34_sorted_copy(items):
     return sorted(items)
-
 
 # 35. Add five user-entered values to an empty list.
 def q35_five_values(values=None):
@@ -236,16 +199,13 @@ def q35_five_values(values=None):
             values.append(input("Enter a value: "))
     return values
 
-
 # 36. Remove all occurrences of a particular number.
 def q36_remove_all(numbers, wanted):
     return [number for number in numbers if number != wanted]
 
-
 # 37. Replace all occurrences of one value with another.
 def q37_replace_all(items, old_value, new_value):
     return [new_value if item == old_value else item for item in items]
-
 
 # 38. Insert an element after every occurrence of a particular value.
 def q38_insert_after(items, wanted, new_item):
@@ -256,14 +216,12 @@ def q38_insert_after(items, wanted, new_item):
             result.append(new_item)
     return result
 
-
 # 39. Find the frequency of every element in a list.
 def q39_frequencies(items):
     counts = {}
     for item in items:
         counts[item] = counts.get(item, 0) + 1
     return counts
-
 
 # 40. Check whether two lists contain the same elements and counts.
 def q40_same_elements(first, second):
@@ -274,51 +232,41 @@ def q40_same_elements(first, second):
             return False
     return True
 
-
 # 41. Print the first 5 elements using slicing.
 def q41_first_five(items):
     return items[:5]
-
 
 # 42. Print the last 5 elements using slicing.
 def q42_last_five(items):
     return items[-5:]
 
-
 # 43. Print elements from index 2 to 7.
 def q43_indexes_two_to_seven(items):
     return items[2:8]
-
 
 # 44. Print every second element.
 def q44_every_second(items):
     return items[::2]
 
-
 # 45. Print every third element.
 def q45_every_third(items):
     return items[::3]
-
 
 # 46. Reverse a list using slicing.
 def q46_reverse_slice(items):
     return items[::-1]
 
-
 # 47. Copy a list using slicing.
 def q47_copy_slice(items):
     return items[:]
-
 
 # 48. Remove the first three elements using slicing.
 def q48_remove_first_three(items):
     return items[3:]
 
-
 # 49. Remove the last three elements using slicing.
 def q49_remove_last_three(items):
     return items[:-3]
-
 
 # 50. Replace the middle element or elements using slicing.
 def q50_replace_middle(items, replacements):
@@ -331,22 +279,18 @@ def q50_replace_middle(items, replacements):
         end = middle + 1
     return items[:start] + replacements + items[end:]
 
-
 # 51. Extract all even-indexed elements.
 def q51_even_indexes(items):
     return items[::2]
-
 
 # 52. Extract all odd-indexed elements.
 def q52_odd_indexes(items):
     return items[1::2]
 
-
 # 53. Split a list into two nearly equal halves.
 def q53_two_halves(items):
     middle = (len(items) + 1) // 2
     return items[:middle], items[middle:]
-
 
 # 54. Rotate a list left by 2 positions using slicing.
 def q54_rotate_left_two(items):
@@ -355,7 +299,6 @@ def q54_rotate_left_two(items):
     steps = 2 % len(items)
     return items[steps:] + items[:steps]
 
-
 # 55. Rotate a list right by 3 positions using slicing.
 def q55_rotate_right_three(items):
     if not items:
@@ -363,81 +306,65 @@ def q55_rotate_right_three(items):
     steps = 3 % len(items)
     return items[-steps:] + items[:-steps] if steps else items[:]
 
-
 # 56. Generate numbers from 1 to 50 using list comprehension.
 def q56_numbers_one_to_fifty():
     return [number for number in range(1, 51)]
-
 
 # 57. Generate squares from 1 to 20.
 def q57_squares_one_to_twenty():
     return [number * number for number in range(1, 21)]
 
-
 # 58. Generate cubes from 1 to 20.
 def q58_cubes_one_to_twenty():
     return [number ** 3 for number in range(1, 21)]
-
 
 # 59. Generate only even numbers from 1 to 100.
 def q59_evens_one_to_hundred():
     return [number for number in range(1, 101) if number % 2 == 0]
 
-
 # 60. Generate only odd numbers from 1 to 100.
 def q60_odds_one_to_hundred():
     return [number for number in range(1, 101) if number % 2 != 0]
-
 
 # 61. Generate numbers from 1 to 100 divisible by both 3 and 5.
 def q61_divisible_by_three_and_five():
     return [number for number in range(1, 101) if number % 3 == 0 and number % 5 == 0]
 
-
 # 62. Convert a list of strings to uppercase.
 def q62_uppercase(words):
     return [word.upper() for word in words]
-
 
 # 63. Convert a list of strings to lowercase.
 def q63_lowercase(words):
     return [word.lower() for word in words]
 
-
 # 64. Extract words having more than 5 characters.
 def q64_long_words(words):
     return [word for word in words if len(word) > 5]
-
 
 # 65. Extract numbers greater than 50.
 def q65_greater_than_fifty(numbers):
     return [number for number in numbers if number > 50]
 
-
 # 66. Replace negative numbers with 0.
 def q66_replace_negatives(numbers):
     return [0 if number < 0 else number for number in numbers]
-
 
 # 67. Create a list containing "Even" or "Odd" for each number.
 def q67_even_or_odd(numbers):
     return ["Even" if number % 2 == 0 else "Odd" for number in numbers]
 
-
 # 68. Create a list containing the length of every word.
 def q68_word_lengths(words):
     return [len(word) for word in words]
-
 
 # 69. Extract vowels from a string using list comprehension.
 def q69_vowels(text):
     return [letter for letter in text if letter.lower() in "aeiou"]
 
-
 # 70. Create a list of numbers whose square is greater than 100.
 def q70_square_greater_than_hundred(numbers):
     return [number for number in numbers if number * number > 100]
-
 
 # 71. Remove duplicate elements from a list without using set().
 def q71_remove_duplicates(items):
@@ -447,7 +374,6 @@ def q71_remove_duplicates(items):
             result.append(item)
     return result
 
-
 # 72. Find all duplicate elements in a list.
 def q72_duplicates(items):
     result = []
@@ -456,36 +382,29 @@ def q72_duplicates(items):
             result.append(item)
     return result
 
-
 # 73. Find all elements that occur only once in a list.
 def q73_unique_elements(items):
     return [item for item in items if items.count(item) == 1]
-
 
 # 74. Find the common elements between two lists.
 def q74_common(first, second):
     return [item for item in q71_remove_duplicates(first) if item in second]
 
-
 # 75. Find elements present in the first list but not the second.
 def q75_only_in_first(first, second):
     return [item for item in q71_remove_duplicates(first) if item not in second]
-
 
 # 76. Merge two lists and remove duplicates.
 def q76_merge_without_duplicates(first, second):
     return q71_remove_duplicates(first + second)
 
-
 # 77. Find the intersection of three lists.
 def q77_intersection_three(first, second, third):
     return [item for item in q71_remove_duplicates(first) if item in second and item in third]
 
-
 # 78. Find the union of two lists without using set().
 def q78_union(first, second):
     return q71_remove_duplicates(first + second)
-
 
 # 79. Find the missing number from a list containing numbers from 1 to N.
 def q79_missing_number(numbers):
@@ -495,14 +414,12 @@ def q79_missing_number(numbers):
             return number
     return None
 
-
 # 80. Find the first non-repeating element in a list.
 def q80_first_non_repeating(items):
     for item in items:
         if items.count(item) == 1:
             return item
     return None
-
 
 # 81. Find the first element that repeats while scanning the list.
 def q81_first_repeating(items):
@@ -512,7 +429,6 @@ def q81_first_repeating(items):
             return item
         seen.append(item)
     return None
-
 
 # 82. Find the element that occurs most frequently.
 def q82_most_frequent(items):
