@@ -1,7 +1,3 @@
-# NumPy L4 Practice Workbook: simple answers for all 100 questions.
-# If NumPy is not installed, run this in a terminal:
-# python -m pip install numpy
-
 # 1. Install NumPy and import it using the alias np.
 import numpy as np
 
