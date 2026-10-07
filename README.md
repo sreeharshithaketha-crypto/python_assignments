@@ -14,6 +14,7 @@ python functions_assignments/functions_workbook.py
 python oop_relationships_assignments/relationships_workbook.py
 python operators_assignments/operators_workbook.py
 python polymorphism_assignments/polymorphism_workbook.py
+python mathplotlib/matplotlib_exercise_01_line_chart.py
 ```
 
 To start the interactive file manager:
@@ -33,5 +34,6 @@ The file-I/O examples create their sample text, CSV, and JSON files inside `file
 - `oop_relationships_assignments/relationships_workbook.py`: IS-A, HAS-A, USES-A, relationship-identification examples, and combined relationship examples.
 - `operators_assignments/operators_workbook.py`: Operator Levels 1-10, including a small calculator and real-world checks.
 - `polymorphism_assignments/polymorphism_workbook.py`: Shared methods, overriding, duck typing, operator overloading, abstract classes, and small payment/report examples.
+- `mathplotlib/`: Beginner-friendly Matplotlib and histogram exercise solutions. Each exercise is in its own Python file, with questions and answers in comments. See `mathplotlib/README.md` for the exercise list and run instructions.
 
 Related prompts that ask for the same behavior use one shared function or class rather than duplicate files. To try a function example, look at its name in the workbook and add a small call in `main()`.
